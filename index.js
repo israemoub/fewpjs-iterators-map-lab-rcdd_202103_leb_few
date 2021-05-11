@@ -21,5 +21,3 @@ const capatalize = tutorials.map(function (tutorial){
     return tutorials[i].split(' ').map(w => w.charAt(0).toUpperCase() + w.substring(1)).join(' ');
   }
 })
-
-
