@@ -14,12 +14,12 @@ const tutorials = [
 const titleCased = () => {
   return tutorials
 */
-const titleCased = () => {
-  return tutorials
-    let newTuto = tutorials.map(capatalize)
-    return newTuto
-}
 
-function capatalize(sentence) {
-    return sentence.split(' ').map(w => w.charAt(0).toUpperCase() + w.substring(1)).join(' ');
-}
+
+const capatalize = tutorials.map(function (tutorial){
+  for (let i = 0; i < tutorials.length; i ++) {
+    return tutorials[i].split(' ').map(w => w.charAt(0).toUpperCase() + w.substring(1)).join(' ');
+  }
+})
+
+
